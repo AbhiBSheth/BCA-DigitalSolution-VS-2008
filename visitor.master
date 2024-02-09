@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="visitor.master.cs" Inherits="visitor" %>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<link rel="stylesheet" href="styles.css" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 290px;
+        }
+        .icon 
+        {
+            padding: 10px;
+            background: dodgerblue;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+        .style2
+        {
+            width: 455px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table style="width: 100%">
+        <tr style="width: 100%">
+            <td class="style1">
+                <asp:Image ID="Image2" runat="server" Height="150px" 
+                    ImageUrl="~/images/images 1.png" Width="44%" />
+            </td>
+            <td class="style2">
+                <a href="Default.aspx"><asp:Image ID="Image1" runat="server" Height="150px" 
+                    ImageUrl="~/images/Digital Solutions.png" Width="97%" /></a>
+            </td>
+            <td style="width: 33.33%">
+                <asp:Image ID="Image3" runat="server" Height="150px" 
+                    ImageUrl="~/images/logo2.jpg" Width="100%" style="margin-left: 117px" />
+            </td>
+        </tr>
+    </table>
+    <div id='cssmenu'>
+	<ul>
+		<li class='last'><a href="Default.aspx">HOME</a></li>
+		<li class='last'><a href="login.aspx"><span>LOGIN</span></a></li>
+		<li class='active has-sub'><a href='#'><span>FORMS</span></a>
+			<ul>
+               <li class='has-sub'><a href='images/Form/Pan Form49A- July 1, 2017.pdf'><span>PAN CARD</span></a></li>
+               <li class='has-sub'><a href='images/Form/aadhaar.pdf'><span>AADHAAR CARD</span></a></li>
+			   <li class='has-sub'><a href="images/Form/SIFY CLASS 2 & 3  FORM-1.pdf"><span>DIGITAL SIGN</span></a></li>
+            </ul>
+      	 </li>
+		 <li class='last'><a href="About.aspx"><span>ABOUT US</span></a></li>
+		 <li class='last'><a href="Contact.aspx"><span>CONTACT US</span></a></li>
+	</ul>
+    </div>
+         <table style="width: 100%">
+        <tr style="width: 100%">
+            <td style="width: 100%">      
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>      
+            </td>
+        </tr>
+    </table>
+    <table style="width: 100%">
+        <tr style="width: 100%">
+            <td style="width: 100%">
+                <div align="center">
+                    <font size="+3">Follow us ::Abhi Sheth </font><br>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a></center>
+                </div>  
+                    <center>&copy; Copyright And All Rights Reserved By <b>Digital Solution 2018-19 </b></center>
+                    <marquee style="color:blue"><h4>Developed By :: Abhi B Sheth</h4></marquee>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
